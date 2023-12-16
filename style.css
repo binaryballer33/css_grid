@@ -20,6 +20,11 @@
     text-align: center;
 }
 
+.show {
+    display: block !important;
+    cursor: pointer;
+}
+
 .contentImgDiv {
     display: flex;
     justify-content: center;
@@ -62,13 +67,22 @@
     padding: 0px .5rem;
 }
 
-.mobileHeader #dropdown-menu {
+.mobileNav {
     display: none;
 }
 
-.mobileHeader #hamburger-icon {
-    display: block;
-    cursor: pointer;
+.mobileNav #dropdownMenu {
+    position: absolute;
+    top: 50px;  /* 50px is the height of the header so this places it directly under */
+    left: 8px; /* moves it perfectly onto the border */
+    background-color: #FF0000;
+    z-index: 1;
+    line-height: 1.5rem;
+}
+
+.mobileNav a {
+    color: white;
+    padding: .5rem;
 }
 
 /* Side Bar */
@@ -159,6 +173,34 @@
     
     .mainContentsCards {
         grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (max-width: 590px) {
+    .header a {
+        padding: 0px .5rem;
+        font-size: 14px;
+    }
+
+}
+
+@media screen and (max-width: 530px) {
+    .header a {
+        padding: 0px .5rem;
+        font-size: 12px;
+    }
+
+}
+
+@media screen and (max-width: 500px) {
+    .header a {
+        display: none;
+        font-size: 1rem;
+    }
+
+    .mobileNav {
+        display: block;
+        cursor: pointer;
     }
 }
 
