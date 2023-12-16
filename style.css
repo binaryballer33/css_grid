@@ -1,0 +1,180 @@
+/* grid layout for the entire page , it's a 8 col 5 row grid set up */
+.grid-layout {
+    display: grid;
+    grid-template-areas: 
+        'header header header header header header header header' /* 8 columns for the header */
+        'sidebar mainContent mainContent mainContent mainContent mainContent mainContent ads' /* 1 column wide sidebar, 6 column wide main content, 1 column wide ads */
+        'sidebar mainContent mainContent mainContent mainContent mainContent mainContent ads' /*  same as above, wanted this to be 2 rows */
+        'sidebar subContent1  subContent1 subContent1 subContent2 subContent2 subContent2 ads' /* 1 column sidebar, 3 column sub content 1, 3 column sub content 2, 1 column ads */
+        'footer footer footer footer footer footer footer footer'; /* 8 columns for the footer */
+}
+
+/* styling used for all sections */
+.sectionStyles {
+    border: 1px solid black;
+    padding: .5rem;
+}
+
+/* Generic Reusable Styles */
+.text-center {
+    text-align: center;
+}
+
+.contentImgDiv {
+    display: flex;
+    justify-content: center;
+    margin: .5rem 0px;
+    position: relative;
+}
+
+.contentImg {
+    width: 95%;
+    aspect-ratio: 4/3;
+}
+
+.contentImgDivHeader {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+}
+
+.contentImgDivSubHeader {
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+}
+
+/* Header Content */
+.header { 
+    grid-area: header; /* don't need to put the value in " " */
+    background-color: #FF0000;
+    height: 1.5rem;
+    display: flex;
+}
+
+.header a {
+    color: white;
+    text-decoration: none;
+    padding: 0px .5rem;
+}
+
+.mobileHeader #dropdown-menu {
+    display: none;
+}
+
+.mobileHeader #hamburger-icon {
+    display: block;
+    cursor: pointer;
+}
+
+/* Side Bar */
+.sidebar { 
+    grid-area: sidebar;
+    background-color: #00FF00;
+}
+
+/* Main Content */
+.mainContent { 
+    grid-area: mainContent;
+    background-color: #0000FF;
+    color: white;
+}
+
+.mainContentsCards {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-auto-rows: max-content;
+    gap: 1rem;
+    padding: 1rem;
+    background-color: rgb(66, 49, 138);
+    color: black;
+}
+
+/* Advertisements  */
+.ads { 
+    grid-area: ads;
+    background-color: #FFFF00;
+}
+
+/* Sub Content 1 */
+.subContent1 { 
+    grid-area: subContent1;
+    background-color: #00FFFF;
+}
+
+/* Sub Content 2 */
+.subContent2 { 
+    grid-area: subContent2;
+    background-color: #FF00FF;
+}
+
+/* Footer */
+.footer { 
+    grid-area: footer;
+    background-color: #000000;
+    color: white;
+    min-height: 5rem;
+}
+
+.footerContent {
+    display: grid;
+    gap: 1.5rem;
+    grid-template-columns: repeat(3, 25%);
+    justify-content: center;
+}
+
+/* Responsive Media Queries */
+@media screen and (max-width: 900px) {
+    .grid-layout {
+        grid-template-areas: 
+            'header'
+            'mainContent'
+            'subContent1'
+            'subContent2'
+            'sidebar'
+            'ads'
+            'footer'; 
+    }
+
+    .mainContentsCards {
+        grid-template-columns: repeat(3, 1fr);
+    }  
+}
+
+@media screen and (max-width: 670px) {
+    .grid-layout {
+        grid-template-areas: 
+            'header'
+            'mainContent'
+            'subContent1'
+            'subContent2'
+            'sidebar'
+            'ads'
+            'footer'; 
+    }
+    
+    .mainContentsCards {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .grid-layout {
+        grid-template-areas: 
+            'header'
+            'mainContent'
+            'subContent1'
+            'subContent2'
+            'sidebar'
+            'ads'
+            'footer'; 
+    }
+    
+    .mainContentsCards {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
