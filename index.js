@@ -6,6 +6,5 @@ mobileNav.addEventListener('click', () => {
     children.forEach(child => {
         child.classList.toggle('show');
     });
-    console.log(mobileNav.innerHTML);
 });
 

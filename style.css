@@ -1,3 +1,18 @@
+/* css variables */
+:root {
+    --theme-color-1: #000;
+    --theme-color-2: teal;
+    --theme-color-3: darkslategray;
+    --theme-color-4: #301934;
+    --theme-color-5: darkgray;
+}
+
+body {
+    margin: 0px;
+    padding: 0px;
+    background-color: var(--theme-color-1);
+}
+
 /* grid layout for the entire page , it's a 8 col 5 row grid set up */
 .grid-layout {
     display: grid;
@@ -11,13 +26,17 @@
 
 /* styling used for all sections */
 .sectionStyles {
-    border: 1px solid black;
+    border: 1px solid var(--theme-color-3);
     padding: .5rem;
 }
 
 /* Generic Reusable Styles */
 .text-center {
     text-align: center;
+}
+
+h1 {
+    color: var(--theme-color-2)
 }
 
 .show {
@@ -30,11 +49,17 @@
     justify-content: center;
     margin: .5rem 0px;
     position: relative;
+    color: var(--theme-color-5) !important;
 }
 
-.contentImg {
+.contentImgPortrait {
     width: 95%;
     aspect-ratio: 4/3;
+}
+
+.contentImgLandscape {
+    width: 95%;
+    aspect-ratio: 16/9;
 }
 
 .contentImgDivHeader {
@@ -56,13 +81,13 @@
 /* Header Content */
 .header { 
     grid-area: header; /* don't need to put the value in " " */
-    background-color: #FF0000;
+    background-color: var(--theme-color-1);
     height: 1.5rem;
     display: flex;
 }
 
 .header a {
-    color: white;
+    color: var(--theme-color-2);
     text-decoration: none;
     padding: 0px .5rem;
 }
@@ -75,27 +100,29 @@
     position: absolute;
     top: 50px;  /* 50px is the height of the header so this places it directly under */
     left: 8px; /* moves it perfectly onto the border */
-    background-color: #FF0000;
+    background-color: var(--theme-color-1);
+    color: var(--theme-color-2);
     z-index: 1;
     line-height: 1.5rem;
 }
 
 .mobileNav a {
-    color: white;
+    color: var(--theme-color-2);
     padding: .5rem;
 }
 
 /* Side Bar */
 .sidebar { 
     grid-area: sidebar;
-    background-color: #00FF00;
+    background-color: var(--theme-color-1);
+    color: var(--theme-color-5);
 }
 
 /* Main Content */
 .mainContent { 
     grid-area: mainContent;
-    background-color: #0000FF;
-    color: white;
+    background-color: var(--theme-color-1);
+    color: var(--theme-color-5);
 }
 
 .mainContentsCards {
@@ -104,33 +131,46 @@
     grid-auto-rows: max-content;
     gap: 1rem;
     padding: 1rem;
-    background-color: rgb(66, 49, 138);
-    color: black;
+    background-color: var(--theme-color-3);
+    color: var(--theme-color-5);
+}
+
+.mainContentsCard {
+    background-color: var(--theme-color-1);
+    border: 1px solid var(--theme-color-5);
+}
+
+.mainContentsCardImg {
+    width: 100%;
+    aspect-ratio: 4/3;
 }
 
 /* Advertisements  */
 .ads { 
     grid-area: ads;
-    background-color: #FFFF00;
+    background-color: var(--theme-color-1);
+    color: var(--theme-color-5);
 }
 
 /* Sub Content 1 */
 .subContent1 { 
     grid-area: subContent1;
-    background-color: #00FFFF;
+    background-color: var(--theme-color-1);
+    color: var(--theme-color-5);
 }
 
 /* Sub Content 2 */
 .subContent2 { 
     grid-area: subContent2;
-    background-color: #FF00FF;
+    background-color: var(--theme-color-1);
+    color: var(--theme-color-5);
 }
 
 /* Footer */
 .footer { 
     grid-area: footer;
-    background-color: #000000;
-    color: white;
+    background-color: var(--theme-color-1);
+    color: var(--theme-color-5);
     min-height: 5rem;
 }
 
