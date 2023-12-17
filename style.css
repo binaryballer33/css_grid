@@ -89,6 +89,7 @@ h1 {
     background-color: var(--theme-color-1);
     height: 1.5rem;
     display: flex;
+    justify-content: space-around;
 }
 
 .header a {
@@ -109,6 +110,8 @@ h1 {
     color: var(--theme-color-2);
     z-index: 1;
     line-height: 1.5rem;
+    width: 100%;
+    text-align: center;
 }
 
 .mobileNav a {
