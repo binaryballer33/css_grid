@@ -39,6 +39,11 @@ h1 {
     color: var(--theme-color-2)
 }
 
+.link {
+    color: var(--theme-color-2);
+    text-decoration: none;
+}
+
 .show {
     display: block !important;
     cursor: pointer;
@@ -146,12 +151,14 @@ h1 {
 
 .mainContentsCard {
     background-color: var(--theme-color-1);
-    border: 1px solid var(--theme-color-5);
+    border: 1px solid var(--theme-color-2);
+    border-radius: .5rem;
 }
 
 .mainContentsCardImg {
     width: 100%;
     aspect-ratio: 4/3;
+    border-radius: .4rem .4rem 0px 0px;
 }
 
 /* Advertisements  */
@@ -189,6 +196,14 @@ h1 {
     gap: 1.5rem;
     grid-template-columns: repeat(3, 25%);
     justify-content: center;
+}
+
+.footer ul {
+    list-style-type: none;
+}
+
+.footer ul li {
+    padding: .5rem;
 }
 
 /* Responsive Media Queries */
