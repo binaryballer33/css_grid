@@ -205,7 +205,6 @@ To `center` something you will mostly be using `justify-content: center` for the
 - if you are doing mobile first development then you will be using a lot of @media screen and (min-width: 900px)
 - if you are doing desktop first development then you will be using a lot of @media screen and (max-width: 900px)
 
-
 ## Git Notes
 
 ### Creating A Brand New Git Repo From Scratch On Your LOCAL Computer
@@ -270,16 +269,23 @@ git commit -m "type your commit message here, don't make it to long"
 
 # unstages the files
 git restore —staged <dir of file name>
-Fixing A Commit Message ( a commit is a collection of files that you have added/modified/deleted )
-git commit —amend # (fixes a bad commit message )
-or
-git commit —amend -m "new commit message" # (fixes a bad commit message )
-Using Git Branch
 ```
 
-### switching and creating branches
+### Fixing A Commit Message ( a commit is a collection of files that you have added/modified/deleted )
 
 ```bash
+git commit —amend # (fixes a bad commit message )
+
+or
+
+git commit —amend -m "new commit message" # (fixes a bad commit message )
+```
+
+### Using Git Branch
+
+```bash
+# switching and creating branches
+
 git checkout -b <brance name you want to create>
 
 git checkout <branch name you want to swtich to, notice you don't need the -b flag, that's only for creating branches>
@@ -301,6 +307,7 @@ git diff HEAD~1 # shows the diff between the current commit and the commit befor
 
 
 ### Using Git Log
+
 ```bash
 git reflog # ( shows commits in the order in which you last referenced them )
 

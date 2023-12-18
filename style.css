@@ -200,6 +200,8 @@ h1 {
 
 .footer ul {
     list-style-type: none;
+    padding: 0px !important;
+    margin: 0px !important;
 }
 
 .footer ul li {
@@ -238,6 +240,10 @@ h1 {
     
     .mainContentsCards {
         grid-template-columns: repeat(2, 1fr);
+    }
+
+    .footerContent {
+        grid-template-columns: repeat(1, 100%);
     }
 }
 
