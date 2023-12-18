@@ -18,6 +18,7 @@ body {
     display: grid;
     grid-template-areas: 
         'header header header header header header header header' /* 8 columns for the header */
+        'landingScreen landingScreen landingScreen landingScreen landingScreen landingScreen landingScreen landingScreen' /* 8 column wide landing screen */
         'sidebar mainContent mainContent mainContent mainContent mainContent mainContent ads' /* 1 column wide sidebar, 6 column wide main content, 1 column wide ads */
         'sidebar mainContent mainContent mainContent mainContent mainContent mainContent ads' /*  same as above, wanted this to be 2 rows */
         'sidebar subContent1  subContent1 subContent1 subContent2 subContent2 subContent2 ads' /* 1 column sidebar, 3 column sub content 1, 3 column sub content 2, 1 column ads */
@@ -113,7 +114,7 @@ h1 {
     left: 8px; /* moves it perfectly onto the border */
     background-color: var(--theme-color-1);
     color: var(--theme-color-2);
-    z-index: 1;
+    z-index: 2;
     line-height: 1.5rem;
     width: 100%;
     text-align: center;
@@ -122,6 +123,11 @@ h1 {
 .mobileNav a {
     color: var(--theme-color-2);
     padding: .5rem;
+}
+
+/* Landing Screen */
+.landingScreen {
+    grid-area: landingScreen;
 }
 
 /* Side Bar */
@@ -254,6 +260,7 @@ h1 {
     .grid-layout {
         grid-template-areas: 
             'header'
+            'landingScreen'
             'mainContent'
             'subContent1'
             'subContent2'
@@ -271,6 +278,7 @@ h1 {
     .grid-layout {
         grid-template-areas: 
             'header'
+            'landingScreen'
             'mainContent'
             'subContent1'
             'subContent2'
@@ -320,6 +328,7 @@ h1 {
     .grid-layout {
         grid-template-areas: 
             'header'
+            'landingScreen'
             'mainContent'
             'subContent1'
             'subContent2'
@@ -330,5 +339,13 @@ h1 {
     
     .mainContentsCards {
         grid-template-columns: repeat(1, 1fr);
+    }
+
+    .contentImgDiv h2 a {
+        color: var(--theme-color-5) !important;
+    }
+
+    h2, h3 {
+        font-size: 1rem;
     }
 }

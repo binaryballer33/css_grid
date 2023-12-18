@@ -262,13 +262,13 @@ git init # run this command inside of the directory that you want to be your pro
 
 ```bash
 # adds the file to the staging "tracked" area
-git add <dir or file name>
+git add directoryOrFileName
 
 # commits the file to the local git commit history
 git commit -m "type your commit message here, don't make it to long"
 
 # unstages the files
-git restore —staged <dir of file name>
+git restore —staged directoryOrFileName
 ```
 
 ### Fixing A Commit Message ( a commit is a collection of files that you have added/modified/deleted )
@@ -286,13 +286,13 @@ git commit —amend -m "new commit message" # (fixes a bad commit message )
 ```bash
 # switching and creating branches
 
-git checkout -b <brance name you want to create>
+git checkout -b branchNameToCreate  # ( creates the specified branch )
 
-git checkout <branch name you want to swtich to, notice you don't need the -b flag, that's only for creating branches>
+git checkout branchNameToSwitchTo # branch name you want to swtich to, notice you don't need the -b flag, that's only for creating branches
 
-git branch -d <branch name> # ( deletes the specified branch )
+git branch -d branchNameToDelete # ( deletes the specified branch )
 
-git branch origin —delete <branch name> # ( deletes the specified branch on the remote )
+git branch origin —delete branchNameToDeletOnRemoteRepo # ( deletes the specified branch on the remote )
 ```
 
 ### Using Git Diff
@@ -300,7 +300,7 @@ git branch origin —delete <branch name> # ( deletes the specified branch on th
 ```bash
 git diff # ( shows the diff for the files you made changes to BEFORE you stage(add) them )
 
-git diff <commitId1> <commitId2> # ( shows you the diff between those 2 commits )
+git diff commitId1 commitId2 # ( shows you the diff between those 2 commits )
 
 git diff HEAD~1 # shows the diff between the current commit and the commit before it
 ```
@@ -354,16 +354,16 @@ git pull —verbose # ( shows more information about what is being pulled )
 
 ```bash
 # Go to the branch with the wrong commit and do a “git log“, get the commit id you want for the other branch
-git checkout <branch name that you want to checkout to>
+git checkout branchNameToSwitchTo
 
-git cherry-pick <commit hash that you got from the other branch>
+git cherry-pick commitId # the commit id from the other branch>
 
 # cherry-pick doesn't delete the commit on the old branch, so you have to do it go back to the branch with the incorrect commit
-- git reset —soft <commit id you want to go back to> # ( git reset —soft will keep all of your work AND keep it staged )
+- git reset —soft commitId # commit you want to go back to ( git reset —soft will keep all of your work AND keep it staged )
 
-- git reset <commit id you want to go back to> # ( git reset —mixed will keep all of your work AND remove it from stage)
+- git reset commitId  # you want to go back to ( git reset —mixed will keep all of your work AND remove it from stage)
 
-- git reset —hard <commit id you want to go back to> # ( git reset —hard will delete all of your changes that are tracked)
+- git reset —hard commitId # commit you want to go back to ( git reset —hard will delete all of your changes that are tracked)
 
 - git reset —hard HEAD~1 # ( HEAD~1 means the commit before HEAD )
 ```
@@ -372,13 +372,13 @@ git cherry-pick <commit hash that you got from the other branch>
 
 ```bash
 git reflog ( get the commit id that contained those changes )
-git checkout <commit id >
+git checkout commitId
 git log ( will show you have that commit back )
 
 # YOU ARE CURRENTLY ON A DETACHED HEAD, NOT ON A BRANCH ( THIS WILL BE DELETED IF NOT SAVED )
-git branch <branch name >
+git branch branchName
 or 
-git checkout -b <branch name>
+git checkout -b branchName
 
 # ***HOW TO UNDO A COMMIT AFTER EVERYONE ELSE HAS ALREADY PULLED THOSE CHANGES***
-git revert <commit id> # ( this creates a new commit on top of the old ones, undoing the changes of that commit id )
+git revert commitId # ( this creates a new commit on top of the old ones, undoing the changes of that commit id )
