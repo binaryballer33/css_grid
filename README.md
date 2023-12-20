@@ -57,9 +57,11 @@
 
 ### Linux
 
-[Linux Playlist](https://www.youtube.com/playlist?list=PLS1QulWo1RIb9WVQGJ_vh-RQusbZgO_As)
-[Linux ls, pwd and cd](https://www.youtube.com/watch?v=MmHcOPJEjGA)
-[Linux rm, cp and mv](https://www.youtube.com/watch?v=QpV2qnakpOo)
+[Linux Playlist](https://www.youtube.com/playlist?list=PLS1QulWo1RIb9WVQGJ_vh-RQusbZgO_As)  
+
+[Linux ls, pwd and cd](https://www.youtube.com/watch?v=MmHcOPJEjGA)  
+
+[Linux rm, cp and mv](https://www.youtube.com/watch?v=QpV2qnakpOo)  
 
 ## Demo Layout With HTML & CSS Code
 
