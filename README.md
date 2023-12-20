@@ -1,5 +1,66 @@
 # CSS Responsive Layout Practice
 
+## Resources
+
+[HTML For Beginners Youtube Playlist](https://www.youtube.com/playlist?list=PL0Zuz27SZ-6OlAwitnFUubtE93DO-l0vu)  
+
+[All HTML5 Tags](https://www.w3schools.com/tags/tag_html.asp)
+
+## MISC
+
+[README Git Notes](https://github.com/binaryballer33/css_grid/blob/main/README.md#git-notes)  
+
+[README CSS Grid HTML Demo Notes](https://github.com/binaryballer33/css_grid/blob/main/README.md#demo-layout-with-html--css-code)  
+
+[README CSS Grid Notes](https://github.com/binaryballer33/css_grid/blob/main/README.md#css-grid)  
+
+[README FlexBox Notes](https://github.com/binaryballer33/css_grid/blob/main/README.md#flexbox)
+
+[Windows Subsystem For Linux ( WSL )](https://www.youtube.com/watch?v=HluqqlSotGg)
+
+### CSS
+
+[CSS For Beginners Youtube Playlist](https://www.youtube.com/playlist?list=PL0Zuz27SZ-6Mx9fd9elt80G1bPcySmWit)  
+
+[All CSS3 Selectors](https://www.w3schools.com/css/css_selectors.asp)  
+
+[CSS Positioning Explained ( absolute, relative, etc )](https://www.youtube.com/watch?v=MxEtxo_AaZ4)  
+
+[CSS Grid Playlist](https://www.youtube.com/playlist?list=PLu8EoSxDXHP5CIFvt9-ze3IngcdAc2xKG)
+
+### CSS Grid & FlexBox
+
+[CSS Grid Simple Layout Demo Code](https://github.com/binaryballer33/css_grid?tab=readme-ov-file#demo-layout-with-html--css-code)  
+
+[CSS Grid ( Design Your Website Layout ) Short Video](https://www.youtube.com/watch?v=68O6eOGAGqA)
+
+[Flexbox Quick Video](https://www.youtube.com/watch?v=phWxA89Dy94)  
+
+[Flexbox ( Used For CSS Positioning and Layout ) Playlist](https://www.youtube.com/watch?v=Y8zMYaD1bz0&list=PL4cUxeGkcC9i3FXJSUfmsNOx8E7u6UuhG)
+
+### CSS Frameworks
+
+[Bootstrap Playlist](https://www.youtube.com/playlist?list=PL4cUxeGkcC9joIM91nLzd_qaH_AimmdAR)
+
+### Javascript
+
+[Javascript Playlist ( All Topics Covered )](https://www.youtube.com/playlist?list=PL0Zuz27SZ-6Oi6xNtL_fwCrwpuqylMsgT)
+
+### React
+
+[React Playlist](https://www.youtube.com/playlist?list=PL0Zuz27SZ-6PrE9srvEn8nbhOOyxnWXfp)
+
+### Git
+
+[Git Version Control System ( VCS )](https://www.youtube.com/watch?v=8JJ101D3knE)
+[Git Notes](https://github.com/binaryballer33/css_grid?tab=readme-ov-file#git-notes)
+
+### Linux
+
+[Linux Playlist](https://www.youtube.com/playlist?list=PLS1QulWo1RIb9WVQGJ_vh-RQusbZgO_As)
+[Linux ls, pwd and cd](https://www.youtube.com/watch?v=MmHcOPJEjGA)
+[Linux rm, cp and mv](https://www.youtube.com/watch?v=QpV2qnakpOo)
+
 ## Demo Layout With HTML & CSS Code
 
 ### grid container/layout
