@@ -68,22 +68,6 @@
 ### grid container/layout
 
 ```css
-.grid-layout {
-  display: 'grid';
-  grid-template-areas: 
-  'header header header header'
-  'sidebar mainContent mainContent ads'
-  'sidebar mainContent mainContent ads'
-  'sidebar subContent1 subContent2 ads'
-  'footer footer footer footer';
-}
-
-/* The Grid Selectors and Values are the only important parts for this */
-/* The rest is just for styling purposes to make things stand out */
-
-.header { 
-    grid-area: header /* don't need to put the value in " " */
-}
 
 .divStyles {
   border: 1px solid black;
