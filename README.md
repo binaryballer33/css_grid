@@ -252,6 +252,30 @@ To `center` something you will mostly be using `justify-content: center` for the
 - if you are doing mobile first development then you will be using a lot of @media screen and (min-width: 900px)
 - if you are doing desktop first development then you will be using a lot of @media screen and (max-width: 900px)
 
+## Misc
+
+### Font Awesome Icons And HTML Page Title Icons
+
+HTML Title Page Icons
+
+```html
+    <link
+        rel="icon"
+        type="image/png"
+        href="https://images.unsplash.com/IMAGE_YOU_WANT_TO_USE"
+    />
+```
+
+Getting Access To Font Awesome Icons
+
+```html
+    <!-- Add this line to include Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    <!-- Web Site To Search For More Icons:  https://fontawesome.com/icons -->
+    
+```
+
 ## Git Notes
 
 ### Creating A Brand New Git Repo From Scratch On Your LOCAL Computer
