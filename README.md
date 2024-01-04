@@ -259,12 +259,24 @@ To `center` something you will mostly be using `justify-content: center` for the
 HTML Title Page Icons
 
 ```html
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link
         rel="icon"
         type="image/png"
-        href="https://images.unsplash.com/IMAGE_YOU_WANT_TO_USE"
+        href="https://images.unsplash.com/photo-1581273154768-0a9a16887d2a?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTl8fGdyaWR8ZW58MHx8MHx8fDA%3D"
     />
+    <title>CSS Grid Testing</title>
+    <Link rel="stylesheet" href="style.css">
+
+    <!-- Add this line to include Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
 ```
+
+Result
+![The Result](image.png)
 
 Getting Access To Font Awesome Icons
 
