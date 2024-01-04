@@ -142,6 +142,7 @@ h1 {
     grid-area: mainContent;
     color: var(--theme-color-5);
     position: relative;
+    text-align: center;
 }
 
 .mainContentsCards {
@@ -177,6 +178,7 @@ h1 {
     grid-area: subContent1;
     background-color: var(--theme-color-1);
     color: var(--theme-color-5);
+    text-align: center;
 }
 
 /* Sub Content 2 */
@@ -184,6 +186,7 @@ h1 {
     grid-area: subContent2;
     background-color: var(--theme-color-1);
     color: var(--theme-color-5);
+    text-align: center;
 }
 
 /* Footer */
@@ -244,6 +247,10 @@ h1 {
             'footer'; 
     }
 
+    .contentImgDiv h2 a {
+        color: var(--theme-color-5) !important;
+    }
+
     .mainContentsCards {
         grid-template-columns: repeat(3, 1fr);
     }  
@@ -264,10 +271,6 @@ h1 {
     
     .mainContentsCards {
         grid-template-columns: repeat(2, 1fr);
-    }
-
-    .contentImgDiv h2 a {
-        color: var(--theme-color-5) !important;
     }
 
     .footerContent {
@@ -303,7 +306,7 @@ h1 {
     }
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 450px) {
     .grid-layout {
         grid-template-areas: 
             'header'
