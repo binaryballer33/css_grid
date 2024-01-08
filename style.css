@@ -113,7 +113,7 @@ h1 {
 
 .mobileNav #dropdownMenu {
     position: absolute;
-    top: 50px;  /* 50px is the height of the header so this places it directly under */
+    top: 39px;  /* 50px is the height of the header so this places it directly under */
     left: 8px; /* moves it perfectly onto the border */
     background-color: var(--theme-color-1);
     color: var(--theme-color-2);
