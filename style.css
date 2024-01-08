@@ -96,6 +96,9 @@ h1 {
     height: 1.5rem;
     display: flex;
     justify-content: space-around;
+    position: sticky;
+    top: 0;
+    z-index: 3;
 }
 
 .header a {
